@@ -1,39 +1,80 @@
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="head">
+          <img #clip src="http://images2.fanpop.com/image/photos/10000000/Great-Mountains-mountains-and-waterfalls-10022482-1920-1200.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2">
 
-    <div class="wrapper">
-      <div class="flex-container">
-        <div class="box one"><h1>Good Morning</h1></div>
+      </div>
+      <div class="col-md-5">
+        <div>
+          <label>Enter latitude</label>
+          <input type="text" value="49.6021345" #latitude>
+        </div>
+        <div>
+          <label>Enter longitude</label>
+          <input type="text" value="34.4870274" #longitude>
+        </div>
+        <button class="btn" (click)="getGeocache(latitude.value, longitude.value)">Get Ceocache!</button>
+      </div>
+      <div class="col-md-5">
+        <div>
+          <label>Enter address</label>
+          <input type="text" value="" #address>
+        </div>
+        <button (click)="getGeocacheByAddress(address.value)">getGeocache coords!</button>
+      </div>
+      <div class="col-md-2">
+      </div>
+    </div>
+    <div>
+      <app-geocache-list [clildGeocache]="geocache" [clildByCoords]="byCoords"></app-geocache-list>
+    </div>
+
+    <!-- <div class="wrapper"> -->
+    <!-- <div id="header">Header</div> -->
+      <!-- <div class="center"> -->
+        <!-- <div id="aside-1">Aside 1</div> -->
         <!-- <div class="box two"><h3>TEXT GOES HERE</h3></div>
         <div class="box three"><h3>TEXT GOES HERE</h3></div> -->
-      </div>
+      <!-- </div> -->
 
 
-      <div class="flex-container2">  
+      <!-- <div class="flex-container2"> -->
+      <!-- <div id="center-content">Hello World
+
         <div class="box four">
-          <div class="form-group">
+          <div>
             <label>Enter latitude</label>
             <input type="text" value="49.6021345" #latitude>
-          </div>
-          <div class="form-group">
+
             <label>Enter longitude</label>
             <input type="text" value="34.4870274" #longitude>
           </div>
           <button (click)="getGeocache(latitude.value, longitude.value)">Get Ceocache!</button>
-        </div>
+          <!-- </div> -->
+        <!-- </div> -->
 
-        <div class="box five">
-          <div class="form-group">
-            <label>Enter address</label>
-            <input type="text" value="" #address>
+          <!-- <div class="box five">
+            <div>
+              <label>Enter address</label>
+              <input type="text" value="" #address>
+            </div>
+            <button (click)="getGeocacheByAddress(address.value)">getGeocache coords!</button>
           </div>
-          <button (click)="getGeocacheByAddress(address.value)">getGeocache coords!</button>
-        </div>
+
         <!-- <div class="box six"><h1>Good Morning</h1></div> -->
-      </div>
+      <!-- </div>
+      <div id="aside-2"> Aside 2</div>
     </div>
+    <div id="footer">Footer</div> -->
 
 
 
 
-  <div>
-    <app-geocache-list [clildGeocache]="geocache" [clildByCoords]="byCoords"></app-geocache-list>
+
   </div>
