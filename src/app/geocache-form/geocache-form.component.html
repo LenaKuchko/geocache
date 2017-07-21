@@ -8,3 +8,7 @@
     <input type="text" value="34.4870274" #longitude>
   </div>
   <button (click)="getGeocache(latitude.value, longitude.value)">Get Ceocache!</button>
+
+  <div>
+    <app-geocache-list [clildGeocache]="geocache"></app-geocache-list>
+  </div>
