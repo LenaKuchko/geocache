@@ -9,6 +9,11 @@
   </div>
   <button (click)="getGeocache(latitude.value, longitude.value)">Get Ceocache!</button>
 
+  <div class="form-group">
+    <label>Enter address</label>
+    <input type="text" value="" #address>
+  </div>
+  <button (click)="getGeocacheByAddress(address.value)">getGeocache coords!</button>
   <div>
-    <app-geocache-list [clildGeocache]="geocache"></app-geocache-list>
+    <app-geocache-list [clildGeocache]="geocache" [clildByCoords]="byCoords"></app-geocache-list>
   </div>

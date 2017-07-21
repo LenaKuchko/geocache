@@ -11,6 +11,8 @@ import { Geocache } from '../geocache';
 export class GeocacheFormComponent implements OnInit {
 
   geocache: Geocache;
+  byCoords: boolean = false;
+
   constructor(private geoApiService: GeoApiService) { }
 
   ngOnInit() {
@@ -26,6 +28,22 @@ export class GeocacheFormComponent implements OnInit {
       console.log(newGeocache);
       this.geocache = newGeocache;
       console.log(this.geocache);
+      this.byCoords = true;
+      console.log(this.byCoords)
     });
+  }
+
+  getGeocacheByAddress(address){
+    this.geoApiService.getAddressByAddress(address).subscribe(response => {
+    console.log(response.json());
+    let info = response.json();
+    console.log(info.results[0]);
+
+    let newGeocache = new Geocache (info.results[0].geometry.location.lat, info.results[0].geometry.location.lng, info.results[0].formatted_address)
+    console.log(newGeocache);
+    this.geocache = newGeocache;
+    console.log(this.geocache);
+    this.byCoords = false;
+  });
   }
 }

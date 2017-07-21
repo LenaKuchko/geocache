@@ -1,4 +1,8 @@
-
   <div *ngIf="clildGeocache">
-    {{clildGeocache.address}}
+    <div *ngIf="clildByCoords === true">
+      {{clildGeocache.address}}
+    </div>
+    <div *ngIf="clildByCoords === false">
+      {{clildGeocache.latitude}}, {{clildGeocache.longitude}}
+    </div>
   </div>

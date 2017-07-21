@@ -14,4 +14,11 @@ export class GeoApiService {
       "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + lat + "," + lan + "&key=" + googleApiKey
     )
   }
+
+  getAddressByAddress(address: string) {
+    return this.http.get(
+      "https://maps.googleapis.com/maps/api/geocode/json?address=" + address + "&key=" + googleApiKey
+    )
+  }
+
 }

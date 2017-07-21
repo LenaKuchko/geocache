@@ -7,6 +7,8 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class GeocacheListComponent implements OnInit {
   @Input() clildGeocache;
+  @Input() clildByCoords;
+
 
   constructor() { }
 
