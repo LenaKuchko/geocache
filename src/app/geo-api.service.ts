@@ -16,10 +16,16 @@ export class GeoApiService {
     ).subscribe(response => {
       let geocache: Geocache;
       console.log(response.json());
-      // for(let result of response.json().hits) {
-      //   geocache = new Geocache(result.recipe.label, caloriesPer, result.recipe.totalNutrients.CHOCDF.quantity, result.recipe.totalNutrients.FAT.quantity, result.recipe.totalNutrients.PROCNT.quantity, result.recipe.url, result.recipe.image)
-      //   console.log(foundRecipe);
-      // }
+      let info = response.json();
+      console.log(info.results[0]);
+      //49.6021345
+      //34.4870274
+      // console.log(info.results[0].geometry.location.lat);
+      // console.log(info.results[0].geometry.location.lng);
+      // console.log(info.results[0].formatted_address);
+
+      let newGeocache = new Geocache (info.results[0].geometry.location.lat, info.results[0].geometry.location.lng, info.results[0].formatted_address)
+      console.log(newGeocache);
     });
   }
 }

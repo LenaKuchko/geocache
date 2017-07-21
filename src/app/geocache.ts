@@ -1,8 +1,7 @@
 export class Geocache {
   constructor(
-    title: string,
-    latitude: string,
-    longitude: string,
-    address: string
+    public latitude: number,
+    public longitude: number,
+    public address: string
   ){}
 }
