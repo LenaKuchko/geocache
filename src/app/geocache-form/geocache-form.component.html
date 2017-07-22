@@ -15,7 +15,7 @@
             <div>
               <input type="text" placeholder="longitude" #longitude>
             </div>
-            <button class="btn btn-primary" (click)="getGeocache(latitude.value, longitude.value)">Get Ceocache Address!</button>
+            <button class="btn btn-primary" (click)="getGeocache(latitude.value, longitude.value); latitude.value=''; longitude.value=''">Get Ceocache Address!</button>
           </div>
         </div>
       </div>
@@ -25,7 +25,7 @@
           <div class="caption well">
             <h3>Find geocache by address</h3>
             <input id="address" type="text" placeholder="address" #address><br>
-            <button class="btn btn-primary" (click)="getGeocacheByAddress(address.value)">Get Geocache coords!</button>
+            <button class="btn btn-primary" (click)="getGeocacheByAddress(address.value); address.value=''">Get Geocache coords!</button>
           </div>
         </div>
       </div>
@@ -34,7 +34,7 @@
       </div>
     </div>
     <div class="row middle">
-      <app-geocache-list [clildGeocache]="geocache" [clildByCoords]="byCoords"></app-geocache-list>
+      <app-geocache-list [clildGeocache]="geocache" [clildByCoords]="byCoords" [childApiResnonse]="apiResponse"></app-geocache-list>
     </div>
     <div class="row">
       <div class="footer">

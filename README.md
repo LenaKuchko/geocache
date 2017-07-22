@@ -1,28 +1,41 @@
-# Geocacher
+# Geocache
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
+by Lena Kuchko
+
+## Installation
+1. Download or clone the repository from https://github.com/LenaKuchko/geocache
+2. Using terminal, navigate to the directory in which you downloaded project.
+3. In terminal run  $ npm install.
+4. Please sign up using your gmail account to get a Google Geocoding API key.
+5. In the src/app folder, create a file api-keys.ts and put this code into it.
+  `export const googleApiKey = "{{YOUR_API_KEY}}";`
+6. Run `ng serve` for a dev server. Navigate to http://localhost:4200/ in a web browser to view the project.
+
+
+## Specifications
+|Behavior| Input |Output|
+|---|:---|:---|
+|User is able to get address by inputting latitude and longitude  | 49.6020232, 34.4870276 |Talalikhina Ln, 3-4, Poltava, Poltavs'ka oblast, Ukraine |
+|User is able to get latitude and longitude coordinates by inputting an address  | Poltava, Poltavs'ka oblast, Ukraine |49.58826699999999, 34.551417|
+
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+* Angular 2
+* Bootstrap
+* CSS
+* HTML
+* Javascript
+* Typescript
 
-## Build
+## Known bugs
+Tags "Further" and "Exploration" do not work
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+### License
+This software is licensed under the MIT license.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Copyright (c) 2017 **Lena Kuchko**

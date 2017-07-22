@@ -2,13 +2,12 @@
   margin-top: 25px;
   /*padding-left: 100px;
   padding-left: 50px;*/
-
-  background-color: #C9E8D8;
-  opacity: 0.8;
 }
 p {
   padding-left: 20px;
   padding-right: 20px;
+}
 
-
+.col-md-8 {
+  background-color: #C9E8D8;
 }
