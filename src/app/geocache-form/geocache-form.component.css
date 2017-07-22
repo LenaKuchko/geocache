@@ -1,18 +1,11 @@
-.head {
-  background-color: #A2E8DD;
-  height: 400px;
-}
-
 .main {
-  /*position: relative;*/
-  /*height: 100px;*/
   height: 80vh;
   background-image: url("http://vignette1.wikia.nocookie.net/prydain/images/7/7f/Mountains.jpg/revision/latest?cb=20130328022425");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-top: -200px;
+  /*margin-top: -200px;*/
 }
-.col-md-12 {
+/*.col-md-12 {
   background-color: #C9E8D8;
   opacity: 0.8;
 }
@@ -23,11 +16,11 @@
 }
 .navbar {
   margin-bottom: 0px;
-}
+}*/
 .middle {
   background-color: #C9E8D8;
   opacity: 0.8;
-  height: 200px;
+  height: 30vh;
 }
 /*.item {
   text-align: center;
@@ -64,5 +57,17 @@ input {
 
 #address {
   margin-top: 100px;
-
+}
+.footer{
+  position: fixed;
+  bottom:0;
+  width:100%;
+  /*height:130px;*/
+  background-color: #3171aa;
+  opacity: 0.8;
+  color: white;
+}
+.footer ul {
+  margin-top: 25px;
+  list-style-type: none;
 }

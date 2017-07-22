@@ -1,0 +1,12 @@
+.col-md-12 {
+  background-color: #C9E8D8;
+  opacity: 0.8;
+}
+.nav, .navbar-nav, .navbar-brand {
+  font-size: 25px;
+  margin-top: 0px;
+  height: 55px;
+}
+.navbar {
+  margin-bottom: 0px;
+}

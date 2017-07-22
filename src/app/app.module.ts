@@ -7,13 +7,15 @@ import { routing } from './app.routing';
 import { AppComponent } from './app.component';
 import { GeocacheFormComponent } from './geocache-form/geocache-form.component';
 import { GeocacheListComponent } from './geocache-list/geocache-list.component';
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     GeocacheFormComponent,
-    GeocacheListComponent
+    GeocacheListComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

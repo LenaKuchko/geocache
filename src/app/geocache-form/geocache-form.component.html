@@ -1,21 +1,6 @@
 <div class="general">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-12">
-        <nav class="navbar navbar">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="#">Geocacher</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Page 1</a></li>
-            <li><a href="#">Page 2</a></li>
-            <li><a href="#">Page 3</a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
-    <div class="row main">
+    <div class="row main head">
       <div class="col-md-2"></div>
 
       <div class="col-md-4">
@@ -49,12 +34,35 @@
       </div>
     </div>
     <div class="row middle">
-
-    </div>
-    <div class="row bottom">
       <app-geocache-list [clildGeocache]="geocache" [clildByCoords]="byCoords"></app-geocache-list>
     </div>
-
+    <div class="row">
+      <div class="footer">
+        <div class="col-md-2"></div>
+        <div class="col-md-3">
+          <ul>
+            <li>Get to Know Us</li>
+            <li>Careers</li>
+            <li>Partner With Us</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul>
+            <li>Parks & Police</li>
+            <li>Help Center</li>
+            <li>Partner With Us</li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <ul>
+            <li>Get to Know Us</li>
+            <li>Careers</li>
+            <li>Partner With Us</li>
+          </ul>
+        </div>
+        <div class="col-md-1"></div>
+      </div>
+    </div>
   </div>
 
 </div>

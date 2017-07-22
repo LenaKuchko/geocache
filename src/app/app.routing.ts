@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { Geocache } from './geocache';
 import { GeocacheListComponent } from './geocache-list/geocache-list.component';
 import { GeocacheFormComponent } from './geocache-form/geocache-form.component';
+import { AboutComponent } from './about/about.component';
 
 const appRoutes: Routes = [
   {
@@ -10,9 +11,9 @@ const appRoutes: Routes = [
     component: GeocacheFormComponent
   },
   {
-    path: 'list',
-    component: GeocacheListComponent
-  }
+   path: 'about',
+   component: AboutComponent
+ }
 ]
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
